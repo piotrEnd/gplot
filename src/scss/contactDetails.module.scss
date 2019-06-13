@@ -1,0 +1,43 @@
+@import './variables';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		font-weight: 300;
+	}
+
+	a {
+		text-decoration: none;
+		color: $primary-color;
+		font-size: 2rem;
+	}
+}
+
+.swingHorizontal:hover {
+	animation: swingHorizontal 1s ease;
+	animation-iteration-count: 1;
+}
+
+@keyframes swingHorizontal {
+	15% {
+		transform: translateX(5px);
+	}
+	30% {
+		transform: translateX(-5px);
+	}
+	50% {
+		transform: translateX(3px);
+	}
+	65% {
+		transform: translateX(-3px);
+	}
+	80% {
+		transform: translateX(2px);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}

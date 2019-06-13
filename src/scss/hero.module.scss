@@ -1,0 +1,44 @@
+@import './variables';
+
+.hero {
+	min-height: calc(70vh - 48px);
+	background-position: center;
+	background-size: cover;
+	opacity: 1 !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.lead {
+	background-color: rgba(123, 43, 155, 0.45);
+	border-radius: 6px;
+	padding: 1rem 8rem;
+	color: white;
+	font-family: $heading-font;
+	text-align: center;
+
+	@media (max-width: 899px) {
+		padding: 1rem 6rem;
+	}
+
+	h1 {
+		font-size: 10rem;
+		font-weight: 100;
+
+		@media (max-width: 899px) {
+			font-size: 7rem;
+		}
+
+		@media (max-width: 499px) {
+			font-size: 6rem;
+		}
+	}
+
+	h2 {
+		font-size: 1.5em;
+		display: inline-block;
+		border-top: 5px white dotted;
+		padding-top: 2px;
+	}
+}

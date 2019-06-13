@@ -1,14 +1,42 @@
-import React from "react"
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { IoMdArrowBack } from 'react-icons/io';
+import { Link } from 'gatsby';
 
-const NotFoundPage = () => (
-  <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
+import Layout from '../components/layout';
+import Hero from '../components/Hero';
+import styles from '../scss/contactDetails.module.scss';
 
-export default NotFoundPage
+import SEO from '../components/SEO';
+
+const getError = graphql`
+	query {
+		error: file(relativePath: { eq: "8.jpg" }) {
+			childImageSharp {
+				fluid {
+					...GatsbyImageSharpFluid_tracedSVG
+				}
+			}
+		}
+	}
+`;
+
+const ErrorPage = () => {
+	const { error } = useStaticQuery(getError);
+
+	return (
+		<Layout>
+			<SEO title="szukasz dalej?" />
+			<Hero img={error} title="404" subtitle="niezmiennie ostatni taki rodzynek!" />
+
+			<section className={styles.swingHorizontal} style={{ margin: '2rem auto' }}>
+				<Link to="/">
+					<IoMdArrowBack size="78" color="#7b2b9b" />
+				</Link>
+			</section>
+		</Layout>
+	);
+};
+
+export default ErrorPage;

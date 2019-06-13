@@ -1,0 +1,43 @@
+@import './variables';
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.specs {
+	display: flex;
+	justify-content: center;
+}
+
+.description {
+	max-width: 600px;
+	margin: 0 2.5rem;
+	text-indent: 20px;
+	text-align: justify;
+}
+
+.keys {
+	margin: 0 15px 0 25px;
+	color: $primary-color;
+	text-align: right;
+}
+
+.values {
+	color: inherit;
+	text-align: left;
+	margin-right: 15px;
+}
+
+.map {
+	width: 600px;
+	height: 450px;
+}
+
+.video {
+	max-width: 640px;
+	max-height: 360px;
+	margin-bottom: 4rem;
+}

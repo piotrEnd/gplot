@@ -1,0 +1,41 @@
+@import './variables';
+
+.navbar {
+	margin-bottom: 2px;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+	background-color: $primary-color;
+	list-style-type: none;
+	font-size: 2rem;
+	font-family: $heading-font;
+	letter-spacing: 1px;
+	padding: 10px 0;
+
+	@media (max-width: 899px) {
+		font-size: 1.8rem;
+		padding: 8px 0;
+	}
+
+	@media (max-width: 499px) {
+		font-size: 1.5rem;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		letter-spacing: 2px;
+		padding: .6rem 1rem;
+		outline: none;
+		transition: .3s;
+	}
+
+	a:hover {
+		background: white;
+		color: $primary-color;
+		padding: .6rem 1rem;
+	}
+}
