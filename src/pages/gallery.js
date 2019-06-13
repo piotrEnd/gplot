@@ -4,9 +4,9 @@ import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Heading from '../components/Heading';
-import Galleryimage from '../components/Galleryimage';
-import Copyright from '../components/Copyright';
+import Heading from '../components/heading';
+import GalleryImage from '../components/galleryimage';
+import Copyright from '../components/copyright';
 
 const getImages = graphql`
 	query {
@@ -33,7 +33,7 @@ const gallery = () => {
 		<Layout>
 			<SEO title="galeria" />
 			<Heading heading="galeria" />
-			<Galleryimage images={images} />
+			<GalleryImage images={images} />
 			<ScrollUpButton
 				style={{ backgroundColor: 'transparent', fill: '#7b2b9b', outline: 'none' }}
 			/>

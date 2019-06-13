@@ -5,10 +5,10 @@ import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Heading from '../components/Heading';
-import Map from '../components/Map';
-import Video from '../components/Video';
-import Copyright from '../components/Copyright';
+import Heading from '../components/heading';
+import Map from '../components/map';
+import Video from '../components/video';
+import Copyright from '../components/copyright';
 
 const info = () => (
 	<Layout>
