@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import Hero from '../components/Hero';
-import styles from '../scss/contactDetails.module.scss';
+import styles from '../scss/contactdetails.module.scss';
 
 import SEO from '../components/SEO';
 

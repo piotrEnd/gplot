@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import SEO from '../components/SEO';
 import Heading from '../components/Heading';
 import Hero from '../components/Hero';
-import ContactDetails from '../components/ContactDetails';
+import Contactdetails from '../components/Contactdetails';
 
 const getHero = graphql`
 	query {
@@ -27,7 +27,7 @@ const Contact = () => {
 			<SEO title="kontakt" />
 			<Hero img={hero} title="35/17" subtitle="ostatnia taka działka w Poznaniu" />
 			<Heading heading="kontakt" />
-			<ContactDetails name="Bogusław" />
+			<Contactdetails name="Bogusław" />
 		</Layout>
 	);
 };

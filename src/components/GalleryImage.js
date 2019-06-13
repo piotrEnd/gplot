@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'gatsby-image';
-import styles from '../scss/galleryImage.module.scss';
+import styles from '../scss/galleryimage.module.scss';
 
 const GalleryImage = ({ images }) => {
 	return (

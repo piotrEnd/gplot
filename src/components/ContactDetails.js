@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../scss/contactDetails.module.scss';
+import styles from '../scss/contactdetails.module.scss';
 
 const ContactDetails = ({ name, children }) => {
 	return (

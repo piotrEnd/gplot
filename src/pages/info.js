@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../scss/infoDetails.module.scss';
+import styles from '../scss/infodetails.module.scss';
 import { TinyButton as ScrollUpButton } from 'react-scroll-up-button';
 
 import Layout from '../components/layout';
