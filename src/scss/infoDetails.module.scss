@@ -7,20 +7,24 @@
 	justify-content: center;
 }
 
-.specs {
-	display: flex;
-	justify-content: center;
-}
-
 .description {
 	max-width: 600px;
-	margin: 0 2.5rem;
 	text-indent: 20px;
 	text-align: justify;
+
+	@media (max-width: 799px) {
+		margin: 1.5rem 2.5rem;
+	}
+}
+
+.specs {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 20px;
+	align-items: center;
 }
 
 .keys {
-	margin: 0 15px 0 25px;
 	color: $primary-color;
 	text-align: right;
 }
@@ -28,7 +32,6 @@
 .values {
 	color: inherit;
 	text-align: left;
-	margin-right: 15px;
 }
 
 .map {
