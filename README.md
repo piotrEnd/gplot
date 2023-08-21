@@ -3,20 +3,21 @@
 
 **Information architecture:**
 
-I have created and deployed 'property website' for a large plot near Poznan in order to reach wide online audience apart from efforts of estate agency. Main page has great panoramic photo showing the object of sale with intriguing font on top and intentionally skimpy contact data (private seller). Next view provides description, specs, map and drone video. Gallery holds aerial photograpy. In addition, I supervised shooting and filming.
+A dedicated property website for a spacious plot near Poznan. The main page highlights a captivating panoramic photo showcasing the property for sale. Since it's a private seller, minimal contact information is intentionally provided. The information section provides a description, specifications, a map, and a drone video. The gallery showcases aerial photography
 
 **Design:**
 
-A lot of whitespace improves readability and subconsciously communicate non-pushy sales approach. The whole informational content is made-to-measure in order to eliminate any distractions. Instead of fixed navigation, user has possibility to get quickly the menu by clicking on scroll-up-button.
+Generous white space enhances readability and subtly conveys a non-pushy sales approach. The complete webpage is structured to eliminate any possible sources of distraction. Instead of a fixed navigation, users can readily access the menu at any time by clicking the scroll-up button. The use of the Poiret One font for headlines conveys a sense of sophistication, while the Encode Sans font ensures remarkable readability for body text.
 
-Please >> [visit here](https://www.kot-owo.pl/ ) <<
-
-> *June, 2019*
+Please >> [visit here](https://kot-owo.netlify.app/) <<
 
 
 | technology stack  |
+| --- 		       |
 | --- 		       |
 | JSX |
 | CSS modules |
 | Gatsby  |
 | GraphQL  |
+
+> *June, 2019*
